@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- <meta charset="UTF-8">
+    <title>Document</title> -->
+    <!-- css library goes here  -->
+     <title>qPCR Data Analysis Tool by ED</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+     <link rel="stylesheet" type="text/css" href="./css/star.css">
+     <link rel="stylesheet" type="text/css" href="./css/confetti.css">
+</head>
+<body>
+  <div class = "container-fluid" style = "padding: 0;">
+    <div class="sky">
+        <div class="starts">
+          <div class="small-stars">
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+          </div>
+
+          <div class="medium-stars">
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+            <span class="star"><i></i></span>
+          </div>
+
+          <div class="big-stars">
+            <span id="star1" class="star"><i></i></span>
+            <span id="star2" class="star"><i></i></span>
+            <span id="star3" class="star"><i></i></span>
+            <span id="star4" class="star"><i></i></span>
+            <span id="star5" class="star"><i></i></span>
+          </div>
+
+          <div id = "logodiv">
+            <img id = "logopicanimation" class = "animate__animated animate__rollIn center-align" src="img/personalislogo.png">
+            <div id = "textlogodiv">
+              <img id = "companyLabel" class = "animate__animated animate__fadeInUp" src="img/personalis_logo.png">
+            </div>
+          </div>
+
+          <div class = "hud">
+            <!-- Button trigger modal -->
+            <div id="inputMapModal" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">🎉Complete!!!🎉</h5>
+                  </div>
+                  <div id="modalText" class="modal-body">
+                    <p>Please open the saved qPCR file!!</p>
+                    <!-- Create a div where the graph will take place -->
+                      <div id="finish"></div>
+                  </div>
+                  <!-- <div class="modal-footer">
+                    <button id = "plateMapSubmit" type="button" class="btn btn-primary">Submit</button>
+                  </div> -->
+                </div>
+              </div>
+          </div>
+          <!-- <div class="js-container container" style="top:0px !important;"></div> -->
+<!--  -->
+
+          </div>
+        </div>
+
+
+		</div>
+
+  </div>
+
+
+
+
+
+  <!-- the css property is grid although its stated as div -->
+
+
+
+
+<!-- js library goes here -->
+  <script type="text/javascript" src="/eel.js"></script>
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+  <script src="./js/confetti.js"></script>
+  <script src="./js/animationValidationHandler.js"></script>
+  <!-- <script>
+    const start = () => {
+      setTimeout(function() {
+          confetti.start()
+      }, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+    };
+
+    start();
+  </script> -->
+
+
+  <!-- <script>
+    function callPythonFunction(){
+      eel.pythonPrintsValue(2, 3)
+      }
+    </script> -->
+
+
+</body>
+
+</html>
